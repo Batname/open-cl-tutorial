@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1874D48B1E22B29700643E12 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1874D48A1E22B29700643E12 /* main.cpp */; };
+		1874D4931E22B2A700643E12 /* libswiftOpenCL.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1874D4921E22B2A700643E12 /* libswiftOpenCL.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		1874D4871E22B29700643E12 /* open-cl-tutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "open-cl-tutorial"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1874D48A1E22B29700643E12 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1874D4921E22B2A700643E12 /* libswiftOpenCL.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftOpenCL.tbd; path = System/Library/PrivateFrameworks/Swift/libswiftOpenCL.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1874D4931E22B2A700643E12 /* libswiftOpenCL.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				1874D4891E22B29700643E12 /* open-cl-tutorial */,
 				1874D4881E22B29700643E12 /* Products */,
+				1874D4911E22B2A600643E12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,14 @@
 				1874D48A1E22B29700643E12 /* main.cpp */,
 			);
 			path = "open-cl-tutorial";
+			sourceTree = "<group>";
+		};
+		1874D4911E22B2A600643E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1874D4921E22B2A700643E12 /* libswiftOpenCL.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +228,10 @@
 		1874D48F1E22B29700643E12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/Swift",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +239,10 @@
 		1874D4901E22B29700643E12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/Swift",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

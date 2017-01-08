@@ -22,13 +22,15 @@ int main(int argc, const char * argv[]) {
     clGetPlatformIDs(platformIdCount, platformIds.data(), nullptr);
     assert(platformIds.size() > 0);
     
-    clGetDeviceIDs(platformIds[0], CL_DEVICE_TYPE_ALL, 0, nullptr, &deviceIdCount);
-    vector<cl_device_id> devicesIds(platformIdCount);
-    clGetDeviceIDs(platformIds[0], CL_DEVICE_TYPE_ALL, deviceIdCount, devicesIds.data(), nullptr);
+    clGetDeviceIDs(platformIds[0], CL_DEVICE_TYPE_ALL, 0, NULL, &deviceIdCount);
+    // cl_device_id* devicesIds = (cl_device_id*)calloc(sizeof(cl_device_id), deviceIdCount);
+    vector<cl_device_id> devicesIds(deviceIdCount);
+    clGetDeviceIDs(platformIds[0], CL_DEVICE_TYPE_ALL, deviceIdCount, devicesIds.data(), NULL);
+    
     assert(devicesIds.size() > 0);
     
     for(auto &device : devicesIds) {
-        clGetDeviceInfo(device, CL_DEVICE_VENDOR, LOG_SIZE, logInfoBuf, NULL);
+        clGetDeviceInfo(device, CL_DEVICE_NAME, LOG_SIZE, logInfoBuf, NULL);
         cout << logInfoBuf << endl;
         clGetDeviceInfo(device, CL_DEVICE_VERSION, LOG_SIZE, logInfoBuf, NULL);
         cout << logInfoBuf << endl;

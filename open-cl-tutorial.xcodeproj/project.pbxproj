@@ -9,17 +9,21 @@
 /* Begin PBXBuildFile section */
 		1874D48B1E22B29700643E12 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1874D48A1E22B29700643E12 /* main.cpp */; };
 		1874D4931E22B2A700643E12 /* libswiftOpenCL.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1874D4921E22B2A700643E12 /* libswiftOpenCL.tbd */; };
+		1874D4951E22B5E200643E12 /* first.cl in Sources */ = {isa = PBXBuildFile; fileRef = 1874D4941E22B5E200643E12 /* first.cl */; };
+		1874D4961E22B5F600643E12 /* first.cl in Copy Files */ = {isa = PBXBuildFile; fileRef = 1874D4941E22B5E200643E12 /* first.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1874D4851E22B29700643E12 /* CopyFiles */ = {
+		1874D4851E22B29700643E12 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				1874D4961E22B5F600643E12 /* first.cl in Copy Files */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -27,6 +31,7 @@
 		1874D4871E22B29700643E12 /* open-cl-tutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "open-cl-tutorial"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1874D48A1E22B29700643E12 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1874D4921E22B2A700643E12 /* libswiftOpenCL.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftOpenCL.tbd; path = System/Library/PrivateFrameworks/Swift/libswiftOpenCL.tbd; sourceTree = SDKROOT; };
+		1874D4941E22B5E200643E12 /* first.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = first.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1874D48A1E22B29700643E12 /* main.cpp */,
+				1874D4941E22B5E200643E12 /* first.cl */,
 			);
 			path = "open-cl-tutorial";
 			sourceTree = "<group>";
@@ -83,7 +89,7 @@
 			buildPhases = (
 				1874D4831E22B29700643E12 /* Sources */,
 				1874D4841E22B29700643E12 /* Frameworks */,
-				1874D4851E22B29700643E12 /* CopyFiles */,
+				1874D4851E22B29700643E12 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -132,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1874D48B1E22B29700643E12 /* main.cpp in Sources */,
+				1874D4951E22B5E200643E12 /* first.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

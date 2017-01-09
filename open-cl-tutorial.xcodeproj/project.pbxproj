@@ -11,6 +11,9 @@
 		1874D4931E22B2A700643E12 /* libswiftOpenCL.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1874D4921E22B2A700643E12 /* libswiftOpenCL.tbd */; };
 		1874D4951E22B5E200643E12 /* kernelHelloWorld.cl in Sources */ = {isa = PBXBuildFile; fileRef = 1874D4941E22B5E200643E12 /* kernelHelloWorld.cl */; };
 		1874D4961E22B5F600643E12 /* kernelHelloWorld.cl in Copy Files */ = {isa = PBXBuildFile; fileRef = 1874D4941E22B5E200643E12 /* kernelHelloWorld.cl */; };
+		18FF56261E23CC6900070095 /* CLProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18FF56241E23CC6900070095 /* CLProgram.cpp */; };
+		18FF56281E23CFB200070095 /* processArray.cl in Sources */ = {isa = PBXBuildFile; fileRef = 18FF56271E23CFB200070095 /* processArray.cl */; };
+		18FF56291E23CFB700070095 /* processArray.cl in Copy Files */ = {isa = PBXBuildFile; fileRef = 18FF56271E23CFB200070095 /* processArray.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,6 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				18FF56291E23CFB700070095 /* processArray.cl in Copy Files */,
 				1874D4961E22B5F600643E12 /* kernelHelloWorld.cl in Copy Files */,
 			);
 			name = "Copy Files";
@@ -34,6 +38,9 @@
 		1874D4941E22B5E200643E12 /* kernelHelloWorld.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = kernelHelloWorld.cl; sourceTree = "<group>"; };
 		1874D4971E22C1A200643E12 /* printDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = printDevices.h; sourceTree = "<group>"; };
 		1874D4981E22C1F200643E12 /* helloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helloWorld.h; sourceTree = "<group>"; };
+		18FF56241E23CC6900070095 /* CLProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLProgram.cpp; sourceTree = "<group>"; };
+		18FF56251E23CC6900070095 /* CLProgram.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CLProgram.hpp; sourceTree = "<group>"; };
+		18FF56271E23CFB200070095 /* processArray.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = processArray.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +75,12 @@
 		1874D4891E22B29700643E12 /* open-cl-tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				18FF56231E23CC4300070095 /* CLProgram */,
 				1874D48A1E22B29700643E12 /* main.cpp */,
 				1874D4941E22B5E200643E12 /* kernelHelloWorld.cl */,
 				1874D4971E22C1A200643E12 /* printDevices.h */,
 				1874D4981E22C1F200643E12 /* helloWorld.h */,
+				18FF56271E23CFB200070095 /* processArray.cl */,
 			);
 			path = "open-cl-tutorial";
 			sourceTree = "<group>";
@@ -82,6 +91,15 @@
 				1874D4921E22B2A700643E12 /* libswiftOpenCL.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18FF56231E23CC4300070095 /* CLProgram */ = {
+			isa = PBXGroup;
+			children = (
+				18FF56241E23CC6900070095 /* CLProgram.cpp */,
+				18FF56251E23CC6900070095 /* CLProgram.hpp */,
+			);
+			name = CLProgram;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +161,8 @@
 			files = (
 				1874D48B1E22B29700643E12 /* main.cpp in Sources */,
 				1874D4951E22B5E200643E12 /* kernelHelloWorld.cl in Sources */,
+				18FF56281E23CFB200070095 /* processArray.cl in Sources */,
+				18FF56261E23CC6900070095 /* CLProgram.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +297,7 @@
 				1874D4901E22B29700643E12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

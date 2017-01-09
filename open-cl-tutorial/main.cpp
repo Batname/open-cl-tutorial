@@ -3,8 +3,6 @@
 int main(int argc, const char * argv[]) {
 
     CLProgram myProgram("processArray.cl");
-    char logBuffer[CLProgram::LOG_SIZE];
-    myProgram.executeProgram("processArray", logBuffer);
-    std::cout << logBuffer << std::endl;
+    std::cout << myProgram.executeProgram("processArray") << std::endl;
     return 0;
 }

@@ -46,8 +46,7 @@ CLProgram::CLProgram(const char * progtamFilePath) {
     free(sourceCode);
 }
 
-void CLProgram::executeProgram(const char* programName, char* logBuffer) {
-    
+const char* CLProgram::executeProgram(const char* programName) {
     /* Create OpenCL Kernel */
     kernel = clCreateKernel(program, programName, &ret);
     
@@ -59,7 +58,8 @@ void CLProgram::executeProgram(const char* programName, char* logBuffer) {
     
     /* Copy results from the memory buffer */
     ret = clEnqueueReadBuffer(command_queue, memobj, CL_TRUE, 0,
-                              MEM_SIZE * sizeof(char), logBuffer, 0, NULL, NULL);
+                              MEM_SIZE * sizeof(char), executeBufferLog, 0, NULL, NULL);
+    return executeBufferLog;
 }
 
 

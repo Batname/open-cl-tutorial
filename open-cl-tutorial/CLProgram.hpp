@@ -20,7 +20,7 @@ public:
     CLProgram(const char * progtamFilePath);
     ~CLProgram();
     
-    void executeProgram(const char* programName, char* logBuffer);
+    const char* executeProgram(const char* programName);
 private:
     cl_device_id device_id = NULL;
     cl_context context = NULL;
@@ -32,6 +32,7 @@ private:
     cl_uint ret_num_devices;
     cl_uint ret_num_platforms;
     cl_int ret;
+    char executeBufferLog[MEM_SIZE];
 };
 
 #endif /* CLProgram_hpp */

@@ -1,8 +1,8 @@
-#include "CLProgram.hpp"
+#include "hostSample.h"
+
+using namespace my_cl;
 
 int main(int argc, const char * argv[]) {
-
-    CLProgram myProgram("processArray.cl");
-    std::cout << myProgram.executeProgram("processArray") << std::endl;
+    hostSample();
     return 0;
 }

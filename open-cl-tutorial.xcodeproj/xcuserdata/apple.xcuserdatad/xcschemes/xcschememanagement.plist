@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>open-cl-tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>open-cl-tutorial.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1874D4861E22B29700643E12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18FF56311E2430F200070095</key>
 		<dict>
 			<key>primary</key>
 			<true/>

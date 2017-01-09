@@ -14,6 +14,13 @@
 		18FF56261E23CC6900070095 /* CLProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18FF56241E23CC6900070095 /* CLProgram.cpp */; };
 		18FF56281E23CFB200070095 /* processArray.cl in Sources */ = {isa = PBXBuildFile; fileRef = 18FF56271E23CFB200070095 /* processArray.cl */; };
 		18FF56291E23CFB700070095 /* processArray.cl in Copy Files */ = {isa = PBXBuildFile; fileRef = 18FF56271E23CFB200070095 /* processArray.cl */; };
+		18FF562D1E24247F00070095 /* hostSampleKernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = 18FF562C1E24247F00070095 /* hostSampleKernel.cl */; };
+		18FF56351E2430F200070095 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18FF56341E2430F200070095 /* main.cpp */; };
+		18FF563A1E2431BD00070095 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FF56391E2431BD00070095 /* OpenCL.framework */; };
+		18FF563C1E2431E200070095 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FF563B1E2431E200070095 /* libgtest.a */; };
+		18FF563E1E2432BF00070095 /* helloSampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18FF563D1E2432BF00070095 /* helloSampleTest.cpp */; };
+		18FF563F1E24331400070095 /* hostSample.h in Sources */ = {isa = PBXBuildFile; fileRef = 18FF562A1E2423EA00070095 /* hostSample.h */; };
+		18FF56401E24331A00070095 /* hostSampleKernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = 18FF562C1E24247F00070095 /* hostSampleKernel.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +36,15 @@
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18FF56301E2430F200070095 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +57,13 @@
 		18FF56241E23CC6900070095 /* CLProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLProgram.cpp; sourceTree = "<group>"; };
 		18FF56251E23CC6900070095 /* CLProgram.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CLProgram.hpp; sourceTree = "<group>"; };
 		18FF56271E23CFB200070095 /* processArray.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = processArray.cl; sourceTree = "<group>"; };
+		18FF562A1E2423EA00070095 /* hostSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hostSample.h; sourceTree = "<group>"; };
+		18FF562C1E24247F00070095 /* hostSampleKernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = hostSampleKernel.cl; sourceTree = "<group>"; };
+		18FF56321E2430F200070095 /* open-cl-tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "open-cl-tests"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FF56341E2430F200070095 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		18FF56391E2431BD00070095 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		18FF563B1E2431E200070095 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../usr/local/Cellar/gtest/libgtest.a; sourceTree = "<group>"; };
+		18FF563D1E2432BF00070095 /* helloSampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helloSampleTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +75,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18FF562F1E2430F200070095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FF563C1E2431E200070095 /* libgtest.a in Frameworks */,
+				18FF563A1E2431BD00070095 /* OpenCL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				1874D4891E22B29700643E12 /* open-cl-tutorial */,
+				18FF56331E2430F200070095 /* open-cl-tests */,
 				1874D4881E22B29700643E12 /* Products */,
 				1874D4911E22B2A600643E12 /* Frameworks */,
 			);
@@ -68,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				1874D4871E22B29700643E12 /* open-cl-tutorial */,
+				18FF56321E2430F200070095 /* open-cl-tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,12 +109,12 @@
 		1874D4891E22B29700643E12 /* open-cl-tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				18FF562B1E2423EF00070095 /* kernel */,
 				18FF56231E23CC4300070095 /* CLProgram */,
 				1874D48A1E22B29700643E12 /* main.cpp */,
-				1874D4941E22B5E200643E12 /* kernelHelloWorld.cl */,
 				1874D4971E22C1A200643E12 /* printDevices.h */,
 				1874D4981E22C1F200643E12 /* helloWorld.h */,
-				18FF56271E23CFB200070095 /* processArray.cl */,
+				18FF562A1E2423EA00070095 /* hostSample.h */,
 			);
 			path = "open-cl-tutorial";
 			sourceTree = "<group>";
@@ -88,6 +122,8 @@
 		1874D4911E22B2A600643E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18FF563B1E2431E200070095 /* libgtest.a */,
+				18FF56391E2431BD00070095 /* OpenCL.framework */,
 				1874D4921E22B2A700643E12 /* libswiftOpenCL.tbd */,
 			);
 			name = Frameworks;
@@ -100,6 +136,25 @@
 				18FF56251E23CC6900070095 /* CLProgram.hpp */,
 			);
 			name = CLProgram;
+			sourceTree = "<group>";
+		};
+		18FF562B1E2423EF00070095 /* kernel */ = {
+			isa = PBXGroup;
+			children = (
+				1874D4941E22B5E200643E12 /* kernelHelloWorld.cl */,
+				18FF56271E23CFB200070095 /* processArray.cl */,
+				18FF562C1E24247F00070095 /* hostSampleKernel.cl */,
+			);
+			name = kernel;
+			sourceTree = "<group>";
+		};
+		18FF56331E2430F200070095 /* open-cl-tests */ = {
+			isa = PBXGroup;
+			children = (
+				18FF56341E2430F200070095 /* main.cpp */,
+				18FF563D1E2432BF00070095 /* helloSampleTest.cpp */,
+			);
+			path = "open-cl-tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +177,23 @@
 			productReference = 1874D4871E22B29700643E12 /* open-cl-tutorial */;
 			productType = "com.apple.product-type.tool";
 		};
+		18FF56311E2430F200070095 /* open-cl-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FF56361E2430F200070095 /* Build configuration list for PBXNativeTarget "open-cl-tests" */;
+			buildPhases = (
+				18FF562E1E2430F200070095 /* Sources */,
+				18FF562F1E2430F200070095 /* Frameworks */,
+				18FF56301E2430F200070095 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "open-cl-tests";
+			productName = "open-cl-tests";
+			productReference = 18FF56321E2430F200070095 /* open-cl-tests */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -132,6 +204,10 @@
 				ORGANIZATIONNAME = apple;
 				TargetAttributes = {
 					1874D4861E22B29700643E12 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					18FF56311E2430F200070095 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -150,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				1874D4861E22B29700643E12 /* open-cl-tutorial */,
+				18FF56311E2430F200070095 /* open-cl-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -159,10 +236,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FF562D1E24247F00070095 /* hostSampleKernel.cl in Sources */,
 				1874D48B1E22B29700643E12 /* main.cpp in Sources */,
 				1874D4951E22B5E200643E12 /* kernelHelloWorld.cl in Sources */,
 				18FF56281E23CFB200070095 /* processArray.cl in Sources */,
 				18FF56261E23CC6900070095 /* CLProgram.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FF562E1E2430F200070095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FF56401E24331A00070095 /* hostSampleKernel.cl in Sources */,
+				18FF563F1E24331400070095 /* hostSample.h in Sources */,
+				18FF563E1E2432BF00070095 /* helloSampleTest.cpp in Sources */,
+				18FF56351E2430F200070095 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +367,36 @@
 			};
 			name = Release;
 		};
+		18FF56371E2430F200070095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/gtest,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/gtest,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18FF56381E2430F200070095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/gtest,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/gtest,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +417,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		18FF56361E2430F200070095 /* Build configuration list for PBXNativeTarget "open-cl-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FF56371E2430F200070095 /* Debug */,
+				18FF56381E2430F200070095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

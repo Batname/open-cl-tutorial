@@ -1,8 +1,6 @@
-kernel void processArray(global char * data)
+kernel void processArray(global int* data, global int* outData)
 {
-    data[0] = 'P';
-    data[1] = 'A';
-    data[2] = '\0';
+    outData[get_global_id(0)] = data[get_global_id(0)] * 2;
 }
 
 
